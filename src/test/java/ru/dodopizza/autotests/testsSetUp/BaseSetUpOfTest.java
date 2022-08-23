@@ -22,7 +22,6 @@ public class BaseSetUpOfTest implements GroupsTest {
         Configuration.baseUrl = properties.getProperty("baseUrl", BASE_URL);
         Configuration.timeout = parseInt(properties.getProperty("timeout", TIMEOUT));
         Configuration.pageLoadTimeout = parseInt(properties.getProperty("pageLoadTimeout", PAGE_LOAD_TIMEOUT));
-        // mvn clean test -P local,all
     }
 
     @BeforeClass(groups = {base}, alwaysRun = true)

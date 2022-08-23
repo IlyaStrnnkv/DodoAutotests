@@ -39,7 +39,7 @@ public class CartTest extends BaseSetUpOfTest {
     @Story("Добавление нескольких товаров в корзину, проверка названий товаров и их цены")
     @Test(groups = {smoke}, description = "Добавление нескольких товаров в корзину, проверка названий товаров и их цены")
     @Severity(SeverityLevel.BLOCKER)
-    public final void test() {
+    public final void checkAddingSeveralPizzasToCart() {
         homePage
             .choosePizzaByIndex(0)
             .chooseSmallPizza()
